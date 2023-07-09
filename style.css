@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(images/3141112.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 980px) {
+  .gallery-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    aspect-ratio: 3 / 4;
+  }
+
+  .our-trips-gallery,
+  .container-about,
+  .what-we-do-container,
+  .where-to-go-layout,
+  .reviews-user {
+    padding: 0 25px;
+    max-width: 730px;
+  }
+
+  .hero-title {
+    max-width: 730px;
+  }
+
+  .hero-title-inner {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  .navigation a {
+    display: none;
+  }
+
+  .icons-size {
+    max-width: 80px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .nav-width-height {
+    height: 70px;
+  }
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-width-height {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.341);
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.hero {
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75vh;
+  background-position: center;
+  position: relative;
+}
+
+.hero-title {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 900px;
+  font-size: xx-large;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hero-title-inner {
+  width: 35%;
+  text-align: right;
+}
+
+.about-us {
+  background-color: white;
+}
+
+.container-about {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 120px 0;
+  width: 900px;
+  height: auto;
+}
+
+.img-about {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.what-we-do {
+  background-color: #33292a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.what-we-do-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.what-we-do-description {
+  text-align: center;
+  /* margin: 0 auto; */
+  padding: 50px 0;
+}
+
+.what-we-do-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.what-we-do-icons p {
+  font-size: 24px;
+}
+
+.icons-size {
+  width: 70px;
+  filter: invert(100%);
+  padding-bottom: 5px;
+}
+
+.our-trips {
+  background-color: white;
+  height: auto;
+}
+
+.our-trips-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  width: 900px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.gallery-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.gallery__item--1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery__item--2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery__item--3 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery__item--4 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.gallery__item--5 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background-color: rgb(225, 209, 189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.gallery__item--6 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.gallery__item--7 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.gallery__item--8 {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.gallery__item--9 {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.btn-gallery {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+}
+
+.where-to-go {
+  background: #644b4f;
+}
+
+.where-to-go-layout {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  padding: 120px 0;
+  color: white;
+}
+
+.where-to-go-title {
+  width: 300px;
+  padding-right: 80px;
+  line-height: 1.3;
+}
+
+.where-to-go-description {
+  width: 600px;
+}
+
+.where-to-go-btn {
+  background-color: white;
+  color: #644b4f;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* pro mně z neznámeho důvodu jsem nebyl schopen napozicovat tento element přes top-margin a tak jsem udělal mezeru v HTML. Pokud můžeš, prosím vysvětli mi, proč jsem to nemohl udělat přes funkci margin. Tlačítko (a element) jsem i obalil do Divu, nicméně také bez odezvy. Díky! */
+}
+
+.where-to-go-btn:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.reviews {
+  background-color: white;
+}
+
+.reviews-title {
+  width: 360px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 120px 0 60px 0;
+}
+
+.reviews-user {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  padding: 60px 0 120px 0;
+}
+
+.reviews-profile1,
+.reviews-profile2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline: 45px;
+}
+
+.reviews-img1,
+.reviews-img2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* margin: 0 auto; */
+  height: auto;
+  max-width: 1920px;
+}
+
+.gallery__img--1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery__img--2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery__img--3 {
+  grid-column: 1 / span 1;
+}
+
+.gallery__img--4 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.gallery-page-bottom {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background: #333333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-contact {
+  color: #e9877b;
+}
+
+.footer-contact:hover {
+  color: #efa69d;
+}
+
+h6 {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .our-trips-gallery,
+  .container-about,
+  .what-we-do-container,
+  .where-to-go-layout,
+  .reviews-user,
+  .gallery {
+    padding: 50px 35px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .where-to-go-description {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    max-width: 85%;
+  }
+
+  .hero-title-inner {
+    font-size: 32px;
+    width: 80%;
+  }
+
+  .gallery-img,
+  .gallery-page-bottom,
+  .img-about,
+  .gallery__item--5 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-title-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 1 0;
+  }
+
+  .gallery-img {
+    box-shadow: 0 0 15px #5c5b5b;
+  }
+
+  .gallery__item--5 a {
+    font-size: 52px;
+  }
+
+  .gallery {
+    background-color: #e0dbd1;
+  }
+
+  .what-we-do-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .icons-size {
+    width: max-content;
+  }
+
+  .where-to-go-title {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-inline: 50px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+}
